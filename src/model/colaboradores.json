@@ -1,0 +1,155 @@
+[
+    {
+        "id": 1,
+        "nome": "Rosa Adriana Nascimento",
+        "idade": "29",
+        "cpf": "60047758600",
+        "rg": "158261094",
+        "data_nasc": "27/10/1991",
+        "telefone_fixo": "81-27949828",
+        "celular": "81-987781813",
+        "cargo": "vendedor",
+        "salario": "R$ 1.576,00",
+        "situacao": "Férias",
+        "estabilidade": true
+    },
+    
+    {   
+        "id": 2,
+        "nome": "Carla Betina Almeida",
+        "idade": 32,
+        "cpf": "58237418719",
+        "rg": "109742928",
+        "data_nasc": "25/09/1988",
+        "telefone_fixo": "81-29702191",
+        "celular": "81-998475024",
+        "cargo": "vendedor",
+        "salario": "R$ 1.576,00",
+        "situacao": "ativa",
+        "estabilidade": false        
+    },
+
+    {
+        "id": 3,
+        "nome": "Ricardo Nelson Rodrigues",
+        "idade": 38,
+        "cpf": "84121734220",
+        "rg": "498231872",
+        "data_nasc": "26/03/1982",
+        "telefone_fixo": "81-38340774",
+        "celular": "81-993737969",
+        "cargo": "gerente",
+        "salario": "R$ 3.200,00",
+        "situacao": "ativa",
+        "estabilidade": true
+        
+    },
+
+    {
+        "id": 4,
+        "nome": "Cláudio Vitor Baptista",
+        "idade": 25,
+        "cpf": "85359056932",
+        "rg": "196133312",
+        "data_nasc": "21/07/1995",        
+        "telefone_fixo": "81-37222141",
+        "celular": "81-994927267",
+        "cargo": "caixa",
+        "salario": "R$ 1.500,00",
+        "situacao": "ativa",
+        "estabilidade": true        
+    },
+
+    {
+        "id": 5,
+        "nome": "Thales César Vieira",
+        "idade": 19,
+        "cpf": "70972699449",
+        "rg": "493830753",
+        "data_nasc": "10/07/2002",
+        "telefone_fixo": "81-26752639",
+        "celular": "81-983965435",
+        "cargo": "jovem aprendiz",
+        "salario": "R$ 600,00",
+        "situacao": "ativa",
+        "estabilidade": false
+        
+    },
+
+    {
+        "id": 6,
+        "nome": "Luís Lucas Anderson Caldeira",
+        "idade": 26,
+        "cpf": "48444998583",
+        "rg": "249354378",
+        "data_nasc": "20/03/1994",
+        "telefone_fixo": "81-29430783",
+        "celular": "81-993604451",
+        "cargo": "admistrador",
+        "salario": "R$ 2.500,00",
+        "situacao": "ativa",
+        "estabilidade": true
+       
+    },
+
+    {
+        "id": 7,
+        "nome": "Maria José Fonseca Alves",
+        "idade": 60,
+        "cpf": "32802257447",
+        "rg": "167534415",
+        "data_nasc": "12/10/1960",
+        "telefone_fixo": "81-37511342",
+        "celular": "81-986633337",
+        "cargo": "serviços gerais",
+        "salario": "R$ 1.400,00",
+        "situacao": "ativa",
+        "estabilidade": true
+        
+    },
+    {
+        "id": 8,
+        "nome": "João Jorge Leandro Corte Real",
+        "idade": 44,
+        "cpf": "53917250039",
+        "rg": "258300218",
+        "data_nasc": "02/08/1965",
+        "telefone_fixo": "81-29833211",
+        "celular": "81-992817746",
+        "cargo": "almoxarifado",
+        "salario": "R$ 2.000,00",
+        "situacao": "ativa",
+        "estabilidade": false
+        
+    },
+
+    {
+        "id": 9,
+        "nome": "Breno Eduardo Lorenzo Barbosa",
+        "idade": 20,
+        "cpf": "52134808535",
+        "rg": "138165002",
+        "telefone_fixo": "81-25692754",
+        "celular": "81-997998731",
+        "cargo": "estagiário",
+        "salario": "R$ 800,00",
+        "situacao": "férias",
+        "estabilidade": false
+        
+    },
+
+    {
+        "id": 10,
+        "nome": "Lavínia Brenda Isis Drumond",
+        "idade": 27,
+        "cpf": "36335109239",
+        "rg": "447776575",
+        "data_nasc": "08/02/1993",
+        "telefone_fixo": "81-37317865",
+        "celular": "81-982583461",
+        "cargo": "admistrativo",
+        "salario": "R$ 2.700,00",
+        "situacao": "ativa",
+        "estabilidade": true        
+    }
+]

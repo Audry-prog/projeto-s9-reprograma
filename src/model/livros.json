@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "titulo":"Guerra e Paz",
+    "autor": "Liev Tolstói",
+    "genero": "Romance Histórico",
+    "editora": "Companhia das Letras",
+    "edicao": "1ª Edição",
+    "ano": 2017,
+    "statusEstoque": false,
+    "isbn-13": "978-8535930047"
+  },
+
+  {
+    "id": 2,
+    "titulo": "Sapiens - Uma Breve História da Humanidade",
+    "autor": "Yuval Harari",
+    "genero": "Não ficção",
+    "editora": "L&PM Editores",
+    "edicao": "1ª Edição",
+    "ano": 2011,
+    "statusEstoque": true,
+    "isbn-13": "978-8525434616"
+  },
+
+  {
+    "id": 3,
+    "titulo": "O Senhor dos Anéis",
+    "autor": "J. R. R. Tolkien",
+    "genero": ["Fantasia‎", "‎Aventura"],
+    "editora": "HarperCollins",
+    "edicao": "1ª Edição",
+    "ano": 2019,
+    "statusEstoque": true,
+    "isbn-13": "978-8595086357"
+  },
+
+  {
+    "id": 4,
+    "titulo": "Harry Potter",
+    "autor": "J. K. Rowling",
+    "genero": ["Fantasia‎","‎Aventura"],
+    "editora": "Rocco",
+    "edicao": "1ª Edição",
+    "ano": 2020,
+    "statusEstoque": true,
+    "isbn-13": "978-6555320022"
+  },
+
+  {
+    "id": 5,
+    "titulo": "Admirável Mundo Novo",
+    "autor": "Aldous Huxley",
+    "genero": ["Romance", "Ficção científica", "Ficção distópica"],
+    "editora": "Globo",
+    "edicao": "2ª Edição",
+    "ano": 2001,
+    "statusEstoque": false,
+    "isbn-13": "978-8525033227"
+  },
+
+  {
+    "id": 6,
+    "titulo": "Cem Anos de Solidão",
+    "autor": "Gabriel Garcia Marques",
+    "genero": ["Realismo mágico", "Romance"],
+    "editora": "Record",
+    "edicao": "1ª Edição",
+    "ano": 2009,
+    "statusEstoque": false,
+    "isbn-13": "978-8501078891"
+  },
+
+  {
+    "id": 7,
+    "titulo": "A Divina Comédia",
+    "autor": "Dante Alighieri",
+    "genero": ["Épico", "Teológico"],
+    "editora": "Editora 34",
+    "edicao": "4ª Edição",
+    "ano": 2017,
+    "statusEstoque": false,
+    "isbn-13": "978-8573261202"
+  },
+
+  {
+    "id": 8,
+    "titulo": "Dom Quixote",
+    "autor": "Miguel de Cervantes",
+    "genero": ["Sátira", "Paródia"],
+    "editora": "Martin Claret",
+    "edicao": "1ª Edição",
+    "ano": 2016,
+    "statusEstoque": true,
+    "isbn-13": "978-8544001254"
+  },
+
+  {
+    "id": 9,
+    "titulo": "Crime e Castigo",
+    "autor": "Fiódor Dostoiévski",
+    "genero": ["Romance", "Ficção Policial", "Romance Psicológico", "Romance filosófico"],
+    "editora": "Editora 34",
+    "edicao": "5ª Edição",
+    "ano": 2020,
+    "statusEstoque": true,
+    "isbn-13": "978-8573266467"
+  },
+  
+  {
+    "id": 10,
+    "titulo": "Os Lusíadas",
+    "autor": "Luís de Camões",
+    "genero": "Poesia Épica",
+    "editora": "Landmark",
+    "edicao": "1ª Edição",
+    "ano": 2017,
+    "statusEstoque": false,
+    "isbn-13": "978-8580700589"
+  }
+]
