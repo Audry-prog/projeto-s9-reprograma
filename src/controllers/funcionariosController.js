@@ -1,15 +1,15 @@
-const funcionarios = require('../model/funcionarios.json');
+const funcionarios = require('../models/funcionarios.json');
 const fs = require('fs');
 
 const getAllFuncionarios = (req, res) => {
-    console.log(req.url);
     res.status(200).send(funcionarios)
 }
 
 const getFuncionarioById = (req, res) => {
     const id = req.params.id;
-    res.status(200).send(funcionarios.find((funcionario) => funcionario.id == id)
-)};
+    const funcionarioFiltrado = funcionarios.find((funcionario) => funcionario.id == id);
+    res.status(201).send(funcionarioFiltrado)
+};
 
 const postFuncionario = (req, res) => {
     console.log(req.body);
