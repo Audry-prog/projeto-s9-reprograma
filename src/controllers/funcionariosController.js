@@ -3,12 +3,23 @@ const fs = require('fs');
 
 const getAllFuncionarios = (req, res) => {
     res.status(200).send(funcionarios)
-}
+};
 
 const getFuncionarioById = (req, res) => {
     const id = req.params.id;
     const funcionarioFiltrado = funcionarios.find((funcionario) => funcionario.id == id);
     res.status(201).send(funcionarioFiltrado)
+};
+
+const getByName = (req, res) => {
+    const nome = req.params.nome;
+    const funcionarioPorNome = funcionarios.find((funcionario) => funcionario.nome.toUpperCase() === nome.toUpperCase());
+    res.status(201).send(funcionarioPorNome);
+};
+
+const getCargos = (req, res) => {
+    const cargos = funcionarios.map((funcionario) => funcionario.cargo);
+    res.status(201).send(cargos)
 };
 
 const postFuncionario = (req, res) => {
@@ -22,7 +33,7 @@ const postFuncionario = (req, res) => {
         console.log('Arquivo atualizado com sucesso!');
     })
     res.status(201).send(funcionarios);
-}
+};
 
 const deleteFuncionario = (req, res) => {
     const id = req.params.id;
@@ -36,6 +47,6 @@ const deleteFuncionario = (req, res) => {
         console.log('Arquivo deletado com sucesso!')
     })
     res.status(201).send(funcionarios);
-}
+};
 
-module.exports = { getAllFuncionarios, getFuncionarioById, postFuncionario, deleteFuncionario };
+module.exports = { getAllFuncionarios, getFuncionarioById, getCargos, getByName, postFuncionario, deleteFuncionario };

@@ -5,10 +5,22 @@ const getAll = (req, res) => {
     res.status(200).send(livros);
 };
 
+const getAllLivrosEstoque = (req, res) => {
+    const livrosEstoque = livros.filter((livro) => livro.statusEstoque === true);
+    const livrosEstoqueTrue = livrosEstoque.map((livro) => ({"titulo": livro.titulo, "isbn": livro.isbn}));
+    res.status(200).send(livrosEstoqueTrue)
+};
+
 const getById = (req, res) => {
     const id = req.params.id;
     res.status(200).send(livros.find((livro) => livro.id == id)
 )};
+
+const getByGenero = (req, res) => {
+    const genero = req.params.genero;
+	const livroFiltradoPorGenero = livros.filter((livro) => livro.genero.toUpperCase() == genero.toUpperCase());
+	res.status(200).send(livroFiltradoPorGenero);
+};
 
 const postLivro = (req, res) => {
     console.log(req.body);
@@ -37,6 +49,6 @@ const deleteLivro = (req, res) => {
     res.status(201).send(livros);
 }
 
-module.exports = { getAll, getById, postLivro, deleteLivro };
+module.exports = { getAll, getById, getByGenero, getAllLivrosEstoque, postLivro, deleteLivro };
 
 
