@@ -1,6 +1,6 @@
 const express = require('express');
-const livros = require('body-parser');
-const app = express();
+const bodyParser = require('body-parser');
+const app = express()
 
 const index = require('./routes/index');
 const livros = require('./routes/livrosRoute');
@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 app.use('/index');
-app.use('/livros');
+app.use('/livros', livros);
 app.use('/funcionarios', funcionarios);
 
 module.exports = app
