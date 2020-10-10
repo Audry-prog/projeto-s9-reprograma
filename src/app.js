@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 })
 
 app.use(bodyParser.json());
-app.use('/index');
+app.use('/index', index);
 app.use('/livros', livros);
 app.use('/funcionarios', funcionarios);
 
