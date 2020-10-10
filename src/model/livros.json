@@ -8,7 +8,7 @@
     "edicao": "1ª Edição",
     "ano": 2017,
     "statusEstoque": false,
-    "isbn-13": "978-8535930047"
+    "isbn": "978-8535930047"
   },
 
   {
@@ -20,7 +20,7 @@
     "edicao": "1ª Edição",
     "ano": 2011,
     "statusEstoque": true,
-    "isbn-13": "978-8525434616"
+    "isbn": "978-8525434616"
   },
 
   {
@@ -32,7 +32,7 @@
     "edicao": "1ª Edição",
     "ano": 2019,
     "statusEstoque": true,
-    "isbn-13": "978-8595086357"
+    "isbn": "978-8595086357"
   },
 
   {
@@ -44,7 +44,7 @@
     "edicao": "1ª Edição",
     "ano": 2020,
     "statusEstoque": true,
-    "isbn-13": "978-6555320022"
+    "isbn": "978-6555320022"
   },
 
   {
@@ -56,7 +56,7 @@
     "edicao": "2ª Edição",
     "ano": 2001,
     "statusEstoque": false,
-    "isbn-13": "978-8525033227"
+    "isbn": "978-8525033227"
   },
 
   {
@@ -68,7 +68,7 @@
     "edicao": "1ª Edição",
     "ano": 2009,
     "statusEstoque": false,
-    "isbn-13": "978-8501078891"
+    "isbn": "978-8501078891"
   },
 
   {
@@ -80,7 +80,7 @@
     "edicao": "4ª Edição",
     "ano": 2017,
     "statusEstoque": false,
-    "isbn-13": "978-8573261202"
+    "isbn": "978-8573261202"
   },
 
   {
@@ -92,7 +92,7 @@
     "edicao": "1ª Edição",
     "ano": 2016,
     "statusEstoque": true,
-    "isbn-13": "978-8544001254"
+    "isbn": "978-8544001254"
   },
 
   {
@@ -104,7 +104,7 @@
     "edicao": "5ª Edição",
     "ano": 2020,
     "statusEstoque": true,
-    "isbn-13": "978-8573266467"
+    "isbn": "978-8573266467"
   },
   
   {
@@ -116,6 +116,6 @@
     "edicao": "1ª Edição",
     "ano": 2017,
     "statusEstoque": false,
-    "isbn-13": "978-8580700589"
+    "isbn": "978-8580700589"
   }
 ]
