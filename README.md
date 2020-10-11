@@ -66,12 +66,12 @@ Implementar um sistema de uma livraria, onde a mesma poderá:
 #### Contratos que deverão ser entregues do Sistema de Funcionários:
 
 | Recurso                                          | Descrição                                  
-| -------------------------------------------------| -------------------------------------------|
+| -------------------------------------------------| ------------------------------------------------------------|
 | `/funcionarios`                                  | Retorna todos os funcionários                               |
-| `/funcionarios/:id`                              | Retorna apenas um funcionário específico                                 |
-| `/funcionarios/funcionario/:id`                  | Retorna a idade de um funcionário específico                                 |
-| `/funcionarios/funcionario/[nome-do-funcionario]`| Retorna o registro do funcionário através de seu nome                                |
-| `/funcionarios/funcionarios/cargos`              | Retorna todas os cargos da Livraria                                   |
+| `/funcionarios/:id`                              | Retorna apenas um funcionário específico                    |
+| `/funcionarios/funcionario/:id`                  | Retorna a idade de um funcionário específico                |
+| `/funcionarios/funcionario/[nome-do-funcionario]`| Retorna o registro do funcionário através de seu nome       |
+| `/funcionarios/funcionarios/cargos`              | Retorna todas os cargos da Livraria                         |
 
 ---
 
