@@ -49,6 +49,6 @@ const deleteLivro = (req, res) => {
     res.status(201).send(livros);
 }
 
-module.exports = { getAll, getById, getByGenero, getAllLivrosEstoque, postLivro, deleteLivro };
+module.exports = { getAll, getAllLivrosEstoque, getById, getByGenero, postLivro, deleteLivro };
 
 
