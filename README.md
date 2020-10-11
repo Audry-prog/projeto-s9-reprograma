@@ -30,8 +30,8 @@ Implementar um sistema de uma livraria, onde a mesma poderá:
    "nome": "Rosa Adriana Nascimento",
    "cpf": "60047758600",
    "rg": "158261094",
-   "data_nasc": "27/10/1991",
-   "telefone_fixo": "81-27949828",
+   "dataNascimnto": "27/10/1991",
+   "telefoneFixo": "81-27949828",
    "celular": "81-987781813",
    "email": "rosa@library.com.br",
    "cargo": "vendedor",
@@ -67,10 +67,11 @@ Implementar um sistema de uma livraria, onde a mesma poderá:
 
 | Recurso                                                   | Descrição                                  |
 | --------------------------------------------------------- | ------------------------------------------ |
-| `/funcionarios`                                           | Retorna todos os funcionários                            |
+| `/funcionarios`                                           | Retorna todos os funcionários                               |
 | `/funcionarios/:id`                                       | Retorna apenas um funcionário específico           |
-| `/funcionarios/funcionario/[nome-completo-do-funcionario]`| Retorna o registro do funcionário através de seu nome|
-| `/funcionarios/funcionarios/cargos`                       | Retorna todas os cargos da Livraria                      |
+| `/funcionarios/funcionario/:id`                           | Retorna a idade de um funcionário específico                                 |
+| `/funcionarios/funcionario/[nome-do-funcionario]`         | Retorna o registro do funcionário através de seu nome|
+| `/funcionarios/funcionarios/cargos`                       | Retorna todas os cargos da Livraria                                   |
 
 ---
 
@@ -91,3 +92,7 @@ pasta-do-projeto
 ### Postman
 
 Ferramenta utilizada para executar a funcionalidade DELETE e POST que a contratante solicitava em seu contrato. Com ela foi possível testar os serviços RESTful por meio do envio de requisições HTTP e da análise do seu retorno.
+
+**OBS:**
+<br>
+Todos os dados da base de funcionários são dados fictícios.

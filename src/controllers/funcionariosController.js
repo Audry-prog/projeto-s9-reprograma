@@ -11,6 +11,17 @@ const getFuncionarioById = (req, res) => {
     res.status(201).send(funcionarioFiltrado)
 };
 
+const getIdadeById = (req, res) => {
+    const id = req.params.id;
+    const funcionario = funcionarios.find((funcionario) => funcionario.id == id);
+    const dataNascimento = funcionario.dataNascimento.split('/');
+    const idade = parseInt(2020)-parseInt(dataNascimento[2]);
+    res.send({
+        "nome": funcionario.nome,
+        "idade": idade
+    });
+};
+
 const getByName = (req, res) => {
     const nome = req.params.nome;
     const funcionarioPorNome = funcionarios.find((funcionario) => funcionario.nome.toUpperCase() === nome.toUpperCase());
@@ -49,4 +60,4 @@ const deleteFuncionario = (req, res) => {
     res.status(201).send(funcionarios);
 };
 
-module.exports = { getAllFuncionarios, getFuncionarioById, getCargos, getByName, postFuncionario, deleteFuncionario };
+module.exports = { getAllFuncionarios, getFuncionarioById, getIdadeById, getCargos, getByName, postFuncionario, deleteFuncionario };
