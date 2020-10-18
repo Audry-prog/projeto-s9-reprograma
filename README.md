@@ -1,6 +1,6 @@
-<h1 align="center">Projeto Prático - Semana 9</h1>
+<h1 align="center">Projeto Prático - Semana 9 e 10</h1>
 
-Olá, o repositório da semana 9 do curso de back-end do Projeto {Reprograma} é o resultado do conteúdo visto sobre APIs, onde utilizamos o método GET para a filtragem de dados, POST para inserção de novos registros e DELETE para deletar arquivos do ojeto JSON.
+Olá, o repositório da semana 9 do curso de back-end do Projeto {Reprograma} é o resultado do conteúdo visto sobre APIs, onde utilizamos o método GET para a filtragem de dados, POST para inserção de novos registros, DELETE para deletar arquivos do ojeto JSON, PUT para atualizar um registro inteiro e PATCH para atualizar apenas um parâmetro de um registro específico.
 
 ## Exercício
 
