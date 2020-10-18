@@ -86,9 +86,9 @@ const patchFuncionario = (req, res) => {
 	try {
         const parametroASerAtualizado = req.body;
 		const funcionarioASerAtualizado = funcionarios.find((funcionario) => funcionario.id == id);
-		Object.Keys(parametroASerAtualizado).forEach((key) => {
-			funcionarioASerAtualizado[key] = parametroASerAtualizado[key];
-		});
+		Object.keys(parametroASerAtualizado).forEach((key) => {
+            funcionarioASerAtualizado[key] = parametroASerAtualizado[key]
+        });
 		fs.writeFile('./src/models/funcionarios.json', JSON.stringify(funcionarios), 'utf-8', function(err) {
 			if (err) {
 				return res.status(424).send({ message: err });

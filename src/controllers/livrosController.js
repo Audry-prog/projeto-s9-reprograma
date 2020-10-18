@@ -73,7 +73,7 @@ const patchLivro = (req, res) => {
     try {
         const parametroASerAtualizado = req.body;
         const livroASerAtualizado = livros.find((livro) => livro.id == id);
-        Object.Keys(parametroASerAtualizado).forEach((key) => {livroASerAtualizado[key] = parametroASerAtualizado[key]});
+        Object.keys(parametroASerAtualizado).forEach((key) => {livroASerAtualizado[key] = parametroASerAtualizado[key]});
         fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function(err) {
             if (err) {
                 return res.status(424).send({ message: err });
