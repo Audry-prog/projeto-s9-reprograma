@@ -117,6 +117,7 @@
 		"celular": "81-982583461",
 		"email": "laviniadrumond@library.com.br",
 		"cargo": "bibliotecária",
-		"salario": "R$ 2.700,00"
+		"salario": "R$ 2.700,00",
+		"feriasGozadas": true
 	}
 ]

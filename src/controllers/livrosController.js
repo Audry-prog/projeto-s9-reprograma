@@ -28,12 +28,12 @@ const postLivro = (req, res) => {
     livros.push({ id, titulo, autor, genero, editora, edicao, ano, statusEstoque, isbn });
     fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function (err) {
         if (err) {
-            return res.status(424).send({ mesage: err});
+            return res.status(424).send({ message: err});
         }
         console.log('Arquivo atualizado com sucesso!');
     })
     res.status(201).send(livros);
-}
+};
 
 const deleteLivro = (req, res) => {
     const id = req.params.id;
@@ -42,13 +42,59 @@ const deleteLivro = (req, res) => {
     livros.splice(index, 1);
     fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function (err) {
         if (err) {
-            return res.status(424).send({ mesage: err});
+            return res.status(424).send({ message: err});
         }
         console.log('Arquivo deletado com sucesso!');
     })
     res.status(201).send(livros);
-}
+};
 
-module.exports = { getAll, getAllLivrosEstoque, getById, getByGenero, postLivro, deleteLivro };
+const putLivro = (req, res) => {
+    try {
+        const id = req.params.id;
+        const livroASerModificado = livros.find((livro) => livro.id == id);
+        const livroModificado = req.body;
+        const index = livros.indexOf(livroASerModificado);
+        livros.splice(index, 1, livroModificado);
+        fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function(err) {
+            if (err) {
+                return res.status(424).send({ message: err });
+            } 
+            console.log('Arquivo atualizado com sucesso')
+        })
+        res.status(200).send(livros);
+    } catch(err) {
+        return res.status(424).send({ message: err });
+    }
+};
+
+const patchLivro = (req, res) => {
+    const id = req.params.id;
+    const parametroASerAtualizado = req.body;
+    try {
+        const livroASerAtualizado = livros.find((livro) => livro.id == id);
+        Object.Keys(parametroASerAtualizado).forEach((key) => {livroASerAtualizado[key] = parametoASerAtualizado[key]});
+        fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function(err) {
+            if (err) {
+                return res.status(424).send({ message: err });
+            }
+            console.log('Arquivo atualizado com sucesso!');
+        })
+        return res.status(201).send(livros);
+    } catch(err) {
+        return res.status(424).send({ message: err });
+    }
+};
+
+module.exports = { 
+    getAll, 
+    getAllLivrosEstoque, 
+    getById, 
+    getByGenero, 
+    postLivro, 
+    deleteLivro,
+    putLivro,
+    patchLivro
+};
 
 

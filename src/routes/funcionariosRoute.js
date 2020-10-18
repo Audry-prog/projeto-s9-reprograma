@@ -9,5 +9,7 @@ router.get('/funcionario/:nome', controller.getByName);
 router.get('/funcionarios/cargos', controller.getCargos);
 router.post('/', controller.postFuncionario);
 router.delete('/:id', controller.deleteFuncionario);
+router.put('/:id', controller.putFuncionario);
+router.patch('/:id', controller.patchFuncionario);
 
 module.exports = router;
