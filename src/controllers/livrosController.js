@@ -70,10 +70,10 @@ const putLivro = (req, res) => {
 
 const patchLivro = (req, res) => {
     const id = req.params.id;
-    const parametroASerAtualizado = req.body;
     try {
+        const parametroASerAtualizado = req.body;
         const livroASerAtualizado = livros.find((livro) => livro.id == id);
-        Object.Keys(parametroASerAtualizado).forEach((key) => {livroASerAtualizado[key] = parametoASerAtualizado[key]});
+        Object.Keys(parametroASerAtualizado).forEach((key) => {livroASerAtualizado[key] = parametroASerAtualizado[key]});
         fs.writeFile('./src/models/livros.json', JSON.stringify(livros), 'utf-8', function(err) {
             if (err) {
                 return res.status(424).send({ message: err });
@@ -96,5 +96,3 @@ module.exports = {
     putLivro,
     patchLivro
 };
-
-
